@@ -38,7 +38,7 @@ import com.qualcomm.robotcore.hardware.DcMotor;
  * The code is structured as an Iterative OpMode
  *
  * This OpMode uses the common Pushbot hardware class to define the devices on the robot.
- * All device access is managed through the HardwareMecanum class.
+ * All device access is managed through the V2Hardware class.
  *
  * This particular OpMode executes a basic Tank Drive Teleop for a PushBot
  * It raises and lowers the claw using the Gampad Y and A buttons respectively.
@@ -49,10 +49,10 @@ import com.qualcomm.robotcore.hardware.DcMotor;
  */
 
 @TeleOp(name="Mecanum Teleop", group="Mecanum")
-public class MecanumDriveTeleOp extends OpMode{
+public class V2TeleOp extends OpMode{
 
     /* Declare OpMode members. */
-    HardwareMecanum robot       = new HardwareMecanum();    // use the class created to define hardware
+    V2Hardware robot       = new V2Hardware();    // use the class created to define hardware
     double[]  slowSpeed         = new double[] {            // slow speed for power assignment
             0,
             0
